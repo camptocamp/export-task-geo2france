@@ -15,8 +15,8 @@ class Settings(BaseSettings):
     UNWANTED_CSV_COLUMNS: list = ("FID", "the_geom")
     UNWANTED_JSON_COLUMNS: list = ("bbox",)
     MAX_FEATURES: int = 5000
-    GEOSERVER_WFS_URL: str = "https://www.geo2france.fr/geoserver/cr_hdf/wfs"
-    GEOSERVER_LAYERS: list = ("epci",)
+    GEOSERVER_WFS_URL: str = "https://www.geo2france.fr/geoserver/wfs"
+    GEOSERVER_LAYERS: list = ("cr_hdf:epci",)
     LOG_LEVEL: str = "INFO"
 
 
